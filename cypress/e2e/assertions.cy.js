@@ -46,12 +46,58 @@ describe ("Assertions demo", () => {
         //либо:
         cy.get('.orangehrm-login-branding > img')
             .should('be.visible')
-            .should('exist')
+            .and('exist')
 
 
         //еще одна проверка на количество ссылок на странице. Ссылки имеют тег <a,
         //поэтому можно посчитать количество таких тегов на странице
         cy.xpath('//a').should('have.length', '5') // ожидаю, что на странице 5 ссылок
+
+
+        cy.get("input[placeholder='Username']").type("Admin")
+        //находим инпут поле и вставляем туда значение
+        cy.get("input[placeholder='Username']").should("have.value", "Admin")
+        //находим инпут поле куда только что вставили значение и проверяем есть ли оно там
+
+    })
+})
+
+
+describe ("Assertions demo", () => {
+    it("Explicit assertions", () => {
+
+        cy.visit("https://opensource-demo.orangehrmlive.com//web/index.php/auth/login")
+        // переход на страницу
+        cy.get("input[placeholder='Username']").type("Admin")
+        // поиск инпут поля и ввод логина
+        cy.get("input[placeholder='Password']").type("admin123")
+        // поиск инпут поля и ввод пароля
+        cy.get("button[type='submit']".click())
+        // поиск кнопки сабмит и клик по ней
+
+        //в этот момент происходит логин и переход на другую страницу
+
+        let expectedName = 'xyz'
+        // создаем переменную с ожидаемым результатом
+
+        cy.get(".oxd-userdropdown-name").then( (x) =>{
+            // находим локатор для значения которое хотим проверить
+            // затем создаем функцию и переносим значение в переменную х
+            let actualName = x.text()
+            // создаем переменную с фактическим результатом, куда переносим вытащенное значение из прошлого шага
+
+            // BDD style
+            expect(actualName).to.equal(expectedName)
+            // проверка того, что фактическое значение переменной соответствуют ожидаемому
+            expect(actualName).to.not.equal(expectedName)
+            // проверка того, что фактическое значение переменной не соответствуют ожидаемому
+
+            //TDD style
+            assert.equal(actualName, expectedName)
+            // проверка того, что фактическое значение переменной соответствуют ожидаемому
+            assert.notEqual(actualName, expectedName)
+            // проверка того, что фактическое значение переменной не соответствуют ожидаемому
+        })
 
     })
 })
