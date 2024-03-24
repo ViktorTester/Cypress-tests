@@ -73,6 +73,7 @@ describe ("Assertions demo", () => {
         cy.get("input[placeholder='Password']").type("admin123")
         // поиск инпут поля и ввод пароля
         cy.get("button[type='submit']".click())
+        cy.get("button[type='submit']".click())
         // поиск кнопки сабмит и клик по ней
 
         //в этот момент происходит логин и переход на другую страницу
@@ -98,6 +99,5 @@ describe ("Assertions demo", () => {
             assert.notEqual(actualName, expectedName)
             // проверка того, что фактическое значение переменной не соответствуют ожидаемому
         })
-
     })
 })
