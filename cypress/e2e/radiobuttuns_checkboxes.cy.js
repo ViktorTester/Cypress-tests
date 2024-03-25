@@ -1,10 +1,12 @@
-import { demo_qa as dq } from "./Locators/locators";
-import { url } from "./Locators/locators";
-describe ('Check UI elements', ()=> {
+import {demo_qa as dq} from "./Locators/locators";
+import {urls as u} from "./Locators/locators";
 
-    it('Checking radiobuttons', () =>{
+
+describe('Check UI elements', () => {
+
+    it('Checking radiobuttons', () => {
         // переход на страницу
-        cy.visit(url)
+        cy.visit(u.url)
 
         // закрыть окно "принять куки"
         cy.get(dq.cookies_consent).contains('Consent').click()
@@ -36,9 +38,9 @@ describe ('Check UI elements', ()=> {
 
     })
 
-    it('Checking checkboxes', () =>{
+    it('Checking checkboxes', () => {
 
-            // выбор чекбоксов по одному
+        // выбор чекбоксов по одному
 
         // переход на страницу
         cy.visit(url)
@@ -76,7 +78,7 @@ describe ('Check UI elements', ()=> {
             .should('not.be.checked');
 
 
-            // выбор сразу всех чекбоксов
+        // выбор сразу всех чекбоксов
 
         // нужно найти селектор общий сразу для всех чекбоксов, затем нажать и проверить, что нажато
         // И команда нажатия, и проверка распространяется на все элементы с одним селектором
@@ -89,7 +91,7 @@ describe ('Check UI elements', ()=> {
             .should('not.be.checked')
 
 
-            // выбор первого или последнего чекбокса
+        // выбор первого или последнего чекбокса
 
         // выбор селектора общего для всех чекбоксов и уточнение, что нужен первый из них
         // Нажатие и проверка, что он нажат. Затем отжатие и проверка, что не нажат
@@ -107,12 +109,6 @@ describe ('Check UI elements', ()=> {
             .should('be.checked')
             .uncheck()
             .should('not.be.checked')
-
-
-
-
-
-
 
 
     })

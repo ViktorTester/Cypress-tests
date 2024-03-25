@@ -1,4 +1,4 @@
-describe ("Assertions demo", () => {
+describe("Assertions demo", () => {
     it("Implicit assertions", () => {
 
         cy.visit("https://opensource-demo.orangehrmlive.com//web/index.php/auth/login")
@@ -63,7 +63,7 @@ describe ("Assertions demo", () => {
 })
 
 
-describe ("Assertions demo", () => {
+describe("Assertions demo", () => {
     it("Explicit assertions", () => {
 
         cy.visit("https://opensource-demo.orangehrmlive.com//web/index.php/auth/login")
@@ -72,7 +72,6 @@ describe ("Assertions demo", () => {
         // поиск инпут поля и ввод логина
         cy.get("input[placeholder='Password']").type("admin123")
         // поиск инпут поля и ввод пароля
-        cy.get("button[type='submit']".click())
         cy.get("button[type='submit']".click())
         // поиск кнопки сабмит и клик по ней
 
