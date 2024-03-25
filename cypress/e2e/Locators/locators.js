@@ -4,7 +4,12 @@ export class automationpractice_locators {
     static common = '.lighter';
 }
 
-export const url = "https://letcode.in/test"
+export class urls {
+    static url2 = "https://www.dummyticket.com/dummy-ticket-for-visa-application/";
+    static url = "https://letcode.in/test";
+    static url3 = 'https://www.wikipedia.org';
+    static url4 = 'https://www.google.com';
+}
 
 export class demo_qa {
     // cookies
@@ -22,6 +27,13 @@ export class demo_qa {
     static all_cbox = 'label[class="checkbox"] > input[type="checkbox"]';
 
     //dropdowns
+    static dropdowns = '.card-footer-item[href="/dropdowns"]';
+    static selectFruit = '#fruits';
+    static selectCountry = '#select2-billing_country-container';
+    static inputCountry = '.select2-search__field';
+    static searchInput = '#searchInput';
+    static suggestTitle = '.suggestion-title';
+    static suggestText = '.suggestion-text';
 
 
 
