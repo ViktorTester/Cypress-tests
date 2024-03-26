@@ -34,8 +34,9 @@ export class demo_qa {
     static searchInput = '#searchInput';
     static suggestTitle = '.suggestion-title';
     static suggestText = '.suggestion-text';
-
-
+    static googleInput = '#APjFqb';
+    static cookiesAccept = '.QS5gu.sy4vM';
+    static googleSuggest = 'div.wM6W7d>span'
 
 }
 
