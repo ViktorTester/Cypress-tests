@@ -38,5 +38,13 @@ export class demo_qa {
     static cookiesAccept = '.QS5gu.sy4vM';
     static googleSuggest = 'div.wM6W7d>span'
 
+    //alerts
+    static alerts = '.card-footer-item[href="/alert"]';
+    static simpleAlert = '#accept';
+    static confirmAlert = '#confirm';
+    static promptAlert = '#prompt';
+    static modernAlert = '#modern';
+
+
 }
 
