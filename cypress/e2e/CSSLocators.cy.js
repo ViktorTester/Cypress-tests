@@ -1,4 +1,4 @@
-import { automationpractice_locators as loc } from "./Locators/locators";
+import { automationpractice_locators as loc } from "./Usefull/locators";
 
 describe("CSSLocators", () => {
 

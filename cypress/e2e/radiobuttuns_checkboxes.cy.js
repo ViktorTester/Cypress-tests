@@ -1,5 +1,5 @@
-import {demo_qa as dq} from "./Locators/locators";
-import {urls as u} from "./Locators/locators";
+import {demo_qa as dq} from "./Usefull/locators";
+import {urls as u} from "./Usefull/locators";
 
 
 describe('Check UI elements', () => {
