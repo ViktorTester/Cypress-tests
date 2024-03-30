@@ -85,7 +85,7 @@ describe('alerts', () => {
         cy.get(dq.modernAlert).click()
 
         // найти селекктор кнопки закрытия (крестик) и кликнуть
-        cy.get('.modal-close.is-large').click()
+        cy.get(dq.moderAlertClose).click()
     });
 
     it('auth alerts', () => {
@@ -98,7 +98,7 @@ describe('alerts', () => {
         cy.visit(url.url5_adm)
 
         // когда аутентификация пройдена успешна, нужно сверить текст на странице
-        cy.get('#content')
+        cy.get(dq.textAfterBasicAuth)
             .should('contain', at[3])
             .and('contain', at[4])
 

@@ -9,6 +9,10 @@ export class urls {
     static url = "https://letcode.in/test";
     static url3 = 'https://www.wikipedia.org';
     static url4 = 'https://www.google.com';
+    static url5 = 'https://the-internet.herokuapp.com/basic_auth';
+    static url5_adm = 'https://admin:admin@the-internet.herokuapp.com/basic_auth';
+    static url6 = 'https://the-internet.herokuapp.com/windows';
+    static url7 = 'https://the-internet.herokuapp.com/windows/new';
 }
 
 export class demo_qa {
@@ -44,6 +48,12 @@ export class demo_qa {
     static confirmAlert = '#confirm';
     static promptAlert = '#prompt';
     static modernAlert = '#modern';
+    static nameText = '#myName';
+    static moderAlertClose = '.modal-close.is-large';
+    static textAfterBasicAuth = '#content';
+
+    //child tabs
+    static clickButton = '.example > a';
 
 
 }
