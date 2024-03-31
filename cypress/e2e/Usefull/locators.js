@@ -13,6 +13,7 @@ export class urls {
     static url5_adm = 'https://admin:admin@the-internet.herokuapp.com/basic_auth';
     static url6 = 'https://the-internet.herokuapp.com/windows';
     static url7 = 'https://the-internet.herokuapp.com/windows/new';
+    static url8 = 'https://the-internet.herokuapp.com/iframe';
 }
 
 export class demo_qa {
@@ -54,6 +55,10 @@ export class demo_qa {
 
     //child tabs
     static clickButton = '.example > a';
+
+    //frames
+    static iFrameId = '#mce_0_ifr';
+    static boldButton = "[aria-label='Bold']";
 
 
 }
