@@ -14,6 +14,7 @@ export class urls {
     static url6 = 'https://the-internet.herokuapp.com/windows';
     static url7 = 'https://the-internet.herokuapp.com/windows/new';
     static url8 = 'https://the-internet.herokuapp.com/iframe';
+    static url9 = 'https://demo.opencart.com/admin/index.php?route=common/login';
 }
 
 export class demo_qa {
@@ -60,6 +61,16 @@ export class demo_qa {
     static iFrameId = '#mce_0_ifr';
     static boldButton = "[aria-label='Bold']";
 
+    //tables
+    static login = '#input-username';
+    static password = '#input-password';
+    static loginButton = '.btn.btn-primary';
+    static closeAlert = '.btn-close';
+    static customersMainMenu = '#menu-customer > a';
+    static custumersSubMenu = '#collapse-5 > li:first-child';
+    static tableColumns = '.table.table-bordered > thead > tr > td'
+    static tableRow = '.table.table-bordered > tbody > tr';
+    static tableValue = '.table.table-bordered > tbody > tr:nth-child(5) > td:nth-child(3)'
 
 }
 
