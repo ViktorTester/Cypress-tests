@@ -5,7 +5,7 @@ import {table_texts as tt} from "./Usefull/texts_to_compare";
 
 describe('handling tables', () => {
 
-    // hook - выполняется перед каждый блоком it
+    // hook - выполняется перед каждым блоком it
     beforeEach('Login', () => {
         // переход на сайт, логин и закрытие алерта
         cy.visit(url.url9)
@@ -41,18 +41,51 @@ describe('handling tables', () => {
 
         // запись ниже является фактически вложенной функцией, которая пробегает по всех
         // столбцам и строкам в таблице (на странице)
-         cy.get(dq.tableRow)
-             .each( ($row, index, $rows) => {
-                 cy.wrap($row).within( () => {
-                     cy.get('td').each(($col, index, $cols) => {
-                         cy.log($col.text()); // публикация значения ячейки в консоль
-                         cy.wrap($col).should('not.be.empty'); // проверка на то, что ячейка не пуста
-                     })
-                 })
-             })
+        cy.get(dq.tableRow)
+            .each(($row, index, $rows) => {
+                cy.wrap($row).within(() => {
+                    cy.get('td').each(($col, index, $cols) => {
+                        cy.log($col.text()); // публикация значения ячейки в консоль
+                        cy.wrap($col).should('not.be.empty'); // проверка на то, что ячейка не пуста
+                    })
+                })
+            })
     });
 
     it.only('pagination', () => {
+        // вычисление общего количества страниц
+        let totalPages
+        // сперва находим локатор и заносим из него текст в переменную
+        cy.get(dq.totalPages).then((e) => {
+            let mytext = e.text(); // Showing 1 to 10 of 19013 (1902 Pages) - текст в переменной
+            // Теперь нужно найти две скобки и вычислить число между ними
+            // способ такой, потому-как это число динамическое
+            totalPages = mytext.substring(mytext.indexOf('(') + 1, mytext.indexOf('Pages') - 1);
 
-    });
-});
+            //создаем цикл для поочередного клика по каждой странице
+            for (let p = 1; p <= totalPages; p++) {
+                if (totalPages > 1) {
+                    // выводим страницу на которой находимся
+                    cy.log('active page is ' + p);
+                    // делаем клик по странице, с каждой итерацией увеличивая счетчик на 1
+                    cy.get(dq.pageNumber).contains(p).click();
+                    cy.wait(3000)
+
+                    // Далее можно с каждой страницы получать информацию для сравнения
+                    // данный цикл пробегает по 3 колонке таблицы, в которой находится почта, и
+                    // выводит эту почту в интерфейс. По факту можно каждую такую колонку асертить
+                    cy.get(dq.tableRow)
+                        .each(($row) => {
+                            cy.wrap($row).within(() => {
+                                cy.get('td:nth-child(3)').then((e) => {
+                                    cy.log(e.text())
+                                })
+                            })
+                        })
+                }
+
+            }
+
+        })
+    })
+})
