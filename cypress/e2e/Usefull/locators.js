@@ -70,7 +70,9 @@ export class demo_qa {
     static custumersSubMenu = '#collapse-5 > li:first-child';
     static tableColumns = '.table.table-bordered > thead > tr > td'
     static tableRow = '.table.table-bordered > tbody > tr';
-    static tableValue = '.table.table-bordered > tbody > tr:nth-child(5) > td:nth-child(3)'
+    static tableValue = '.table.table-bordered > tbody > tr:nth-child(5) > td:nth-child(3)';
+    static totalPages = '.col-sm-6.text-end';
+    static pageNumber = '.page-link';
 
 }
 
