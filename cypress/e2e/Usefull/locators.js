@@ -15,6 +15,9 @@ export class urls {
     static url7 = 'https://the-internet.herokuapp.com/windows/new';
     static url8 = 'https://the-internet.herokuapp.com/iframe';
     static url9 = 'https://demo.opencart.com/admin/index.php?route=common/login';
+    static url10 = 'https://demo.opencart.com';
+    static url11 = 'https://swisnl.github.io/jQuery-contextMenu/demo.html';
+    static url12 = 'https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick3';
 }
 
 export class demo_qa {
@@ -73,6 +76,15 @@ export class demo_qa {
     static tableValue = '.table.table-bordered > tbody > tr:nth-child(5) > td:nth-child(3)';
     static totalPages = '.col-sm-6.text-end';
     static pageNumber = '.page-link';
+
+    //mouse events
+    static desktopDropdown = '#narbar-menu > ul > li:nth-child(1) > a';
+    static rightClickButton = '.context-menu-one.btn.btn-neutral';
+    static pasteOption = '.context-menu-icon-paste > span';
+    static cookiesYes = '#accept-choices';
+    static secondTextField = '#field2';
+    static frame = '#iframeResult';
+    static dblclickButton = 'body > button';
 
 }
 
