@@ -8,9 +8,11 @@
   "author": "VIKTOR",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.7.0"
+    "cypress": "^13.7.1"
   },
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1"
   },
   "description": ""

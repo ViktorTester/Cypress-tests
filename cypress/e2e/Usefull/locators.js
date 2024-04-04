@@ -18,6 +18,8 @@ export class urls {
     static url10 = 'https://demo.opencart.com';
     static url11 = 'https://swisnl.github.io/jQuery-contextMenu/demo.html';
     static url12 = 'https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick3';
+    static url13 = 'http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html';
+    static url14 = 'https://en.wikipedia.org/wiki/Latvia';
 }
 
 export class demo_qa {
@@ -84,7 +86,10 @@ export class demo_qa {
     static cookiesYes = '#accept-choices';
     static secondTextField = '#field2';
     static frame = '#iframeResult';
-    static dblclickButton = 'body > button';
-
+    static dblclickButton = "button[ondblclick='myFunction()']";
+    static dragElementRome = '#box6';
+    static dropElementItaly = '#box106';
+    static educationID = '#Education_and_science';
+    static latviaID = '#Latvia_in_World_War_II'
 }
 

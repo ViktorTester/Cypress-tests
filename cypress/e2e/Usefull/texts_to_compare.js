@@ -5,3 +5,7 @@ export const alert_texts = [
     'Congratulations! You must have the proper credentials.',
     'Basic Auth'
 ]
+
+export const table_texts = [
+    'hfgjhgjgjggj@gmail.com'
+]
