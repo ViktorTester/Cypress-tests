@@ -1,6 +1,5 @@
 import {demo_qa as dq} from "./Usefull/locators";
 import {urls as url} from "./Usefull/locators";
-import {table_texts as tt} from "./Usefull/texts_to_compare";
 
 describe('', () => {
     it('mouseover', () => {
