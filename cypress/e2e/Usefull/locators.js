@@ -20,6 +20,9 @@ export class urls {
     static url12 = 'https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick3';
     static url13 = 'http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html';
     static url14 = 'https://en.wikipedia.org/wiki/Latvia';
+    static url15 = 'https://the-internet.herokuapp.com/upload';
+    static url16 = 'http://davidwalsh.name/demo/multiple-file-upload.php';
+    static url17 = 'http://htmlelements.com/demos/fileupload/shadow-dom/index.htm'
 }
 
 export class demo_qa {
@@ -91,5 +94,25 @@ export class demo_qa {
     static dropElementItaly = '#box106';
     static educationID = '#Education_and_science';
     static latviaID = '#Latvia_in_World_War_II'
+
+    //file upload
+    static fileUploadBtn = '#file-upload';
+    static uploadSubmitBtn = '#file-submit';
+    static successMsg = '.example';
+    static uploadedFile = '#uploaded-files';
+    static droppedFile = '.dz-filename';
+    static successMark = '.dz-success-mark';
+    static dragDropBox = '#drag-drop-upload';
+    static fileUploadBtn2 = '#filesToUpload';
+    static msgToAssert = '#main > div > p:nth-child(6) > strong';
+    static uploadedFiles1 = '#fileList > li:nth-child(1)';
+    static uploadedFiles2 = '#fileList > li:nth-child(2)';
+    static shadowUploadBtn = '.smart-browse-input';
+    static shadowUploadedText = '.smart-item-name';
+    static shadowThreeButtons = '.smart-button.smart-unselectable.smart-container';
+
+
+
+
 }
 
