@@ -22,7 +22,8 @@ export class urls {
     static url14 = 'https://en.wikipedia.org/wiki/Latvia';
     static url15 = 'https://the-internet.herokuapp.com/upload';
     static url16 = 'http://davidwalsh.name/demo/multiple-file-upload.php';
-    static url17 = 'http://htmlelements.com/demos/fileupload/shadow-dom/index.htm'
+    static url17 = 'http://htmlelements.com/demos/fileupload/shadow-dom/index.htm';
+    static url18 = 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login';
 }
 
 export class demo_qa {
@@ -111,6 +112,11 @@ export class demo_qa {
     static shadowUploadedText = '.smart-item-name';
     static shadowThreeButtons = '.smart-button.smart-unselectable.smart-container';
 
+    //fixteres
+    static loginUsername = "input[placeholder='Username']";
+    static loginPassword = "input[placeholder='Password']";
+    static submitBtn = "button[type='submit']";
+    static headerDashboard = ".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module";
 
 
 
