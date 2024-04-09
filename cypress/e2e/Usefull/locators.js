@@ -112,11 +112,14 @@ export class demo_qa {
     static shadowUploadedText = '.smart-item-name';
     static shadowThreeButtons = '.smart-button.smart-unselectable.smart-container';
 
-    //fixteres
+    //fixtures
     static loginUsername = "input[placeholder='Username']";
     static loginPassword = "input[placeholder='Password']";
     static submitBtn = "button[type='submit']";
     static headerDashboard = ".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module";
+    static invalidCreds = ".oxd-text.oxd-text--p.oxd-alert-content-text";
+    static profileArrow = ".oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon";
+    static logoutButton = ".oxd-userdropdown-link";
 
 
 
