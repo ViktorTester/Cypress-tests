@@ -9,3 +9,7 @@ export const alert_texts = [
 export const table_texts = [
     'hfgjhgjgjggj@gmail.com'
 ]
+
+export const custom_functions_text = [
+    'Apple MacBook Pro 13-inch'
+]
