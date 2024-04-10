@@ -33,3 +33,10 @@ Cypress.Commands.add('getIframe', (iframe) => {
         .should('be.visible')
         .then(cy.wrap);
 })
+
+//кастомная команда для перехода по ссылке используя label (linked text)
+Cypress.Commands.add('clickLink',(label) => {
+    // команда ищет элемент по тексту, ориентируясь на класс (а)
+    // элемент с таким классом и таким текстом только один.
+    cy.get('a').contains(label).click();
+})

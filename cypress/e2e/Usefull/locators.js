@@ -24,6 +24,7 @@ export class urls {
     static url16 = 'http://davidwalsh.name/demo/multiple-file-upload.php';
     static url17 = 'http://htmlelements.com/demos/fileupload/shadow-dom/index.htm';
     static url18 = 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login';
+    static url19 = 'https://demo.nopcommerce.com';
 }
 
 export class demo_qa {
@@ -120,6 +121,10 @@ export class demo_qa {
     static invalidCreds = ".oxd-text.oxd-text--p.oxd-alert-content-text";
     static profileArrow = ".oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon";
     static logoutButton = ".oxd-userdropdown-link";
+
+    //custom commands
+    static productNameApple = "div[class='product-name'] h1";
+    static productLinkApple = '.product-title > a';
 
 
 
