@@ -11,5 +11,8 @@ export const table_texts = [
 ]
 
 export const custom_functions_text = [
-    'Apple MacBook Pro 13-inch'
+    'Apple MacBook Pro 13-inch',
+    'APPLE MACBOOK PRO 13-INCH',
+    'Log in',
+    'Login was unsuccessful. Please correct the errors and try again.'
 ]

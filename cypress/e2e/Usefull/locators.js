@@ -125,8 +125,10 @@ export class demo_qa {
     //custom commands
     static productNameApple = "div[class='product-name'] h1";
     static productLinkApple = '.product-title > a';
-
-
+    static loginEmail = '#Email';
+    static loginPass = '#Password';
+    static loginBtn = '.button-1.login-button';
+    static msgError = '.message-error.validation-summary-errors';
 
 }
 
