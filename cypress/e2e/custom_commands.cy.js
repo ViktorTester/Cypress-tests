@@ -1,6 +1,7 @@
 import {urls as url} from "./Usefull/locators";
 import {demo_qa as dq} from "./Usefull/locators";
 import {custom_functions_text as cft} from "./Usefull/texts_to_compare";
+
 describe('custom commands', () => {
 
     it('handling links', () => {
