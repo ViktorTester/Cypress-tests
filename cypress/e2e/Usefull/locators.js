@@ -130,5 +130,8 @@ export class demo_qa {
     static loginBtn = '.button-1.login-button';
     static msgError = '.message-error.validation-summary-errors';
 
+    //browser navigation
+    static camerasSection = '#narbar-menu > ul > li:nth-child(7) > a'
+    static camerasTitle = '#content'
 }
 
