@@ -1,5 +1,5 @@
 import {urls as url} from "./API_usefull/Locators";
-import {schema} from "./API_usefull/Schemas";
+import {JSON_schema} from "./API_usefull/Schemas";
 
 const Ajv = require('ajv');
 const ajv = new Ajv()
@@ -16,7 +16,7 @@ describe('Schema validation', () => {
         }).then((response) => {
 
             // вносим в переменную нашу схему предварительно обработанную методом avj.compile()
-            const validate = ajv.compile(schema)
+            const validate = ajv.compile(JSON_schema)
             // вносим в переменную итог сравнения схемы и JSON-ответа на наш запрос
             const isvalid = validate(response.body)
             //делаем проверку на ответ true
