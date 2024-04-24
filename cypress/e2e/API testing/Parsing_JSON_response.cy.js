@@ -3,7 +3,7 @@ import {texts as txt} from "./API_usefull/Texts";
 
 describe('Parsing JSON response', () => {
 
-    it('simple JSON response', () => {
+    it('Simple JSON response', () => {
 
         cy.request({
             method: 'GET',
@@ -27,7 +27,7 @@ describe('Parsing JSON response', () => {
         });
     })
 
-    it('complex JSON response', () => {
+    it('Complex JSON response', () => {
         // данный тест получает информацию о неких продуктах, затем обращается к
         // цене каждого продукта, складывает их и проводит проверку
 
