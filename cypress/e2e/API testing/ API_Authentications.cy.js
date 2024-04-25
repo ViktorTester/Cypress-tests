@@ -25,7 +25,7 @@ describe('API Authentications', () => {
     it('Bearer token', () => {
 
         // Сохраняем токен в переменную
-        const token = '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'
+        const token = 'test_token_1234321'
 
         cy.request({
             method: 'GET',
