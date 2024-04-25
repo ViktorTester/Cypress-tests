@@ -5,4 +5,7 @@ export class urls {
     static API_url4 = 'https://simple-books-api.glitch.me/orders/';
     static API_url5 = 'https://fakestoreapi.com/products/';
     static API_url6 = 'https://petstore.swagger.io/v2/pet/';
+    static API_url7 = 'https://postman-echo.com/basic-auth';
+    static API_url8 = 'https://api.github.com/user/repos';
+    static API_url9 = 'https://api.openweathermap.org/data/2.5/forecast/daily';
 }
