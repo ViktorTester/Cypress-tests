@@ -4,13 +4,13 @@ describe('OAuth 2.0', () => {
 
     // Данные полученные из предварительно настроенной OAuth-аппликации.
     // Для тестов такую аппликацию можно создать например через GitHub
-    const clientID = '54874e02adf97934d722'
-    const clientSecret = '86942ab7d0039f7427b06760ba6d6743dea50339'
-    const authCode = 'd9cb9d2f3931dd95c180'
+    const clientID = 'test'
+    const clientSecret = 'test'
+    const authCode = 'test'
     let accessToken = ''
 
 
-    // https://github.com/login/oauth/authorize?client_id=54874e02adf97934d722
+    // https://github.com/login/oauth/authorize?client_id=test
     // Строка выше - это адрес, по которому нужно перейти, чтобы получить authCode. Он
     // находится в URL, появляющийся при переходе по адресу выше. В него мы
     // передаем наш clientID. Этот код постоянно обновляется и его время жизни кончается.
