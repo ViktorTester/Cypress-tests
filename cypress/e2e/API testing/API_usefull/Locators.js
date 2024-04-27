@@ -7,5 +7,6 @@ export class urls {
     static API_url6 = 'https://petstore.swagger.io/v2/pet/';
     static API_url7 = 'https://postman-echo.com/basic-auth';
     static API_url8 = 'https://api.github.com/user/repos';
-    static API_url9 = 'https://api.openweathermap.org/data/2.5/forecast/daily';
+    static API_url9 = 'https://github.com/login/oauth/access_token';
+    static API_url10 = 'https://api.github.com/user/repos';
 }
